@@ -75,22 +75,22 @@ namespace ConsoleApp2
                 {
                     if (tempArray[j] > tempArray[j + 1])
                     {
-                        int znach = tempArray[j];
+                        kostyl = tempArray[j];
                         tempArray[j] = tempArray[j + 1];
-                        tempArray[j + 1] = znach;
+                        tempArray[j + 1] = kostyl;
 
                     }
                 }
             }
             Console.Write("\n");
-            int l = 0;
+            kostyl = 0;
             for (int i = 0; i < lines; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
 
-                    bubaArray[i, j] = tempArray[l];
-                    l++;
+                    bubaArray[i, j] = tempArray[kostyl];
+                    kostyl++;
                     Console.Write("{0}\t", bubaArray[i, j]);
                 }
                 Console.WriteLine("\n");
